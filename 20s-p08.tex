@@ -1,0 +1,86 @@
+\documentclass{hda/hdaConceptClass}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hda/hdaConceptStyle}
+
+\bibliographystyle{hda/hda}    % Einbinden der Stildatei
+
+\sitTitel{Projekt Latex zur Visualisierung}
+\sitSubtitel{Wochenberichte \\ zur Praxisphase II / III}
+\sitVersion{1.0}
+\sitAutor{Sebastian Ratajczak}    % Student
+\sitDatum{28.05.2020}
+
+% fbeLogo, hdaLogo, [fbiLogo]=Standard
+\sitHeaderLogo{fbeLogo}
+
+\sitCopyright{2020, \printAutor}
+
+\newcommand{\versiontable}[1]{
+  }
+
+\usepackage[de]{hda/hdaLanguage}
+
+\begin{document}
+\makesitHead
+
+
+%% Project Status - weekly refresh
+
+\chapter{Projekt Status
+}\label{chap:status}
+\input{wb/22/status}
+
+\newpage % Für Seitenwechsel vor dem Wochenbericht
+
+% Actual Week : Fr / Mo 9:00 abliefern
+
+\chapter{KW 22 -- 25.05.2020 - 31.05.2020
+}\label{chap:kwxn}
+Es wurde die Latex Umgebung eingerichtet und der grundlegende Projektplan eingerichtet.
+Die Ordnerstruktur wurde wie folgt festgelegt
+
+Grundordner: proj/20s/p08 \newline
+
+\begin{itemize}
+  \item 20-p08.tex
+  \item hda
+  \item Wochenbericht
+  \item KW (z.B. 22 - Jede Woche kommt ein Ordner hinzu)
+  \begin{itemize}
+    \item done.tex
+    \item help.tex
+    \item status.tex
+    \item todo.tex
+  \end{itemize}
+  \item project.tex
+  \item contact.tex
+  \item contact-lecturer.tex
+  \item contact-student.tex
+\end{itemize}
+
+
+\input{wb/22/done} % Diese Woche erreicht.
+\input{wb/22/todo} % Nächste Woche geplant.
+%\input{wb/berichte/help-22"} % Unterstützung erforderlich.
+
+%% Initial Project definition
+\newpage
+\chapter{Projekt Definition
+}\label{chap:project}
+\input{wb/project}
+
+\newpage
+\input{wb/contact}
+
+\newpage
+\sitAppendix                 % Kommentiere Einträge, falls nicht erwünscht.
+%  \sitListOfHistory
+  \sitListOfTables
+  \sitListOfFigures
+  \sitListOfListings
+  \sitListOfIdxInfos
+  \bibliography{wb/bibl-hda-latex}
+%  \sitNotes
+\end{document}
+% eof
