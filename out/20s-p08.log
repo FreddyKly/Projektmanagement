@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.28)  2 JUN 2020 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.28)  7 JUN 2020 14:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Sebastian/Dropbox (Privat)/Uni/PM/proj/20s/p08/20s-p08.tex"
-(c:/Users/Sebastian/Dropbox (Privat)/Uni/PM/proj/20s/p08/20s-p08.tex
+**c:/Users/Freddy/Documents/VS_CODE_Projects/Projektmanagement/20s-p08.tex
+(c:/Users/Freddy/Documents/VS_CODE_Projects/Projektmanagement/20s-p08.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-05-15> (./hda/hdaConceptClass.cls
 Document Class: hda/hdaConceptClass 2020/05/24 v2.5 Sielhorst iT Beratung UG: concept class by Jonathan Sielhorst / Manfred Sielhorst
@@ -619,7 +619,14 @@ Package: babelbib 2019/03/11 v1.32 babelbib: multilingual bibliographies (HH)
 File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count334
 \l__pdf_internal_box=\box105
-) (out/20s-p08.aux)
+) (out/20s-p08.aux
+
+LaTeX Warning: Label `sec:status' multiply defined.
+
+
+LaTeX Warning: Label `chap:kwxn' multiply defined.
+
+)
 \openout1 = `20s-p08.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -773,36 +780,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
 
  []
 
-(./wb/22/status.tex)
-<hda/pp/hda/img/hda-fbe-logo.png, id=99, 264.5082pt x 97.3236pt>
+LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/m/n' aliased to
+(Font)              `T1/IBMPlexSans-TLF/regular/n' on input line 31.
+LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 31.
+<hda/pp/hda/img/hda-fbe-logo.png, id=119, 264.5082pt x 97.3236pt>
 File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
 <use hda/pp/hda/img/hda-fbe-logo.png>
-Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 34.
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 31.
 (pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
-LaTeX Font Info:    Trying to load font information for TS1+IBMPlexSans-TLF on input line 34.
- (c:/texlive/2020/texmf-dist/tex/latex/plex/TS1IBMPlexSans-TLF.fd
+LaTeX Font Info:    Trying to load font information for TS1+IBMPlexSans-TLF on input line 31.
+(c:/texlive/2020/texmf-dist/tex/latex/plex/TS1IBMPlexSans-TLF.fd
 File: TS1IBMPlexSans-TLF.fd 2019/12/06 (autoinst) Font definitions for TS1/IBMPlexSans-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/IBMPlexSans-TLF/m/n' aliased to
-(Font)              `TS1/IBMPlexSans-TLF/regular/n' on input line 34.
+(Font)              `TS1/IBMPlexSans-TLF/regular/n' on input line 31.
 LaTeX Font Info:    Font shape `TS1/IBMPlexSans-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 34.
+(Font)              scaled to size 10.0pt on input line 31.
  [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./hda/pp/hda/img/hda-fbe-logo.png>]
+ <./hda/pp/hda/img/hda-fbe-logo.png>] (./wb/22/status.tex) (./wb/23/status.tex)
 File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
 <use hda/pp/hda/img/hda-fbe-logo.png>
-Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 34.
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 35.
 (pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
  [2]
 Kapitel 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -811,41 +821,58 @@ LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/m/n' aliased to
 (Font)              `T1/IBMPlexSans-TLF/regular/n' on input line 4.
 LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/regular/n' will be
 (Font)              scaled to size 7.0pt on input line 4.
-) (./wb/22/todo.tex)
+) (./wb/22/todo.tex
+File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
+<use hda/pp/hda/img/hda-fbe-logo.png>
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 10.
+(pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
+ [3])
 File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
 <use hda/pp/hda/img/hda-fbe-logo.png>
 Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 68.
 (pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
- [3]
+ [4]
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+
+ []
+
+(./wb/23/done.tex) (./wb/23/todo.tex)
+File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
+<use hda/pp/hda/img/hda-fbe-logo.png>
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 82.
+(pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
+ [5]
+Kapitel 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 
  []
 
 (./wb/project.tex
 LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/m/n' aliased to
-(Font)              `T1/IBMPlexSans-TLF/regular/n' on input line 7.
+(Font)              `T1/IBMPlexSans-TLF/regular/n' on input line 5.
 LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 7.
+(Font)              scaled to size 12.0pt on input line 5.
 LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/b/n' aliased to
-(Font)              `T1/IBMPlexSans-TLF/bold/n' on input line 7.
+(Font)              `T1/IBMPlexSans-TLF/bold/n' on input line 5.
 LaTeX Font Info:    Font shape `T1/IBMPlexSans-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 7.
+(Font)              scaled to size 12.0pt on input line 5.
 )
 File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
 <use hda/pp/hda/img/hda-fbe-logo.png>
-Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 73.
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 87.
 (pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
- [4] (./wb/contact.tex (./wb/contact-student.tex) (./wb/contact-lecturer.tex))
+ [6] (./wb/contact.tex (./wb/contact-student.tex) (./wb/contact-lecturer.tex))
 File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
 <use hda/pp/hda/img/hda-fbe-logo.png>
-Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 76.
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 90.
 (pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
- [5]
-Kapitel 4.
+ [7]
+Kapitel 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 
  []
 
@@ -871,36 +898,39 @@ runsystem(makeindex idxInfo-20s-p08.idx)...executed safely (allowed).
 LaTeX Warning: Empty `thebibliography' environment on input line 10.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
 File: hda/pp/hda/img/hda-fbe-logo.png Graphic file (type png)
 <use hda/pp/hda/img/hda-fbe-logo.png>
-Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 85.
+Package pdftex.def Info: hda/pp/hda/img/hda-fbe-logo.png  used on input line 99.
 (pdftex.def)             Requested size: 170.71652pt x 62.81406pt.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
  (out/20s-p08.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
 Package rerunfilecheck Info: File `20s-p08.out' has not changed.
-(rerunfilecheck)             Checksum: 8E83A71B8A28EF19F039B8F654503E72;1194.
+(rerunfilecheck)             Checksum: 8DD795B669FEB19E4614C143D9727A14;1458.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 14759 strings out of 480476
- 216708 string characters out of 5903481
- 557202 words of memory out of 5000000
- 30311 multiletter control sequences out of 15000+600000
- 645968 words of font info for 55 fonts, out of 8000000 for 9000
+ 14781 strings out of 480476
+ 217019 string characters out of 5903481
+ 557274 words of memory out of 5000000
+ 30320 multiletter control sequences out of 15000+600000
+ 657684 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,49p,885b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,51p,888b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/plex/plx_eywvcp.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/plex/plx_umrhwx.enc}<c:/texlive/2020/texmf-dist/fonts/type1/ibm/plex/IBMPlexSans-Bold.pfb><c:/texlive/2020/texmf-dist/fonts/type1/ibm/plex/IBMPlexSans.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on out/20s-p08.pdf (6 pages, 117370 bytes).
+Output written on out/20s-p08.pdf (8 pages, 121007 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

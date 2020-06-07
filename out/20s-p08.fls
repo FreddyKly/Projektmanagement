@@ -1,8 +1,8 @@
-PWD c:/Users/Sebastian/Dropbox (Privat)/Uni/PM/proj/20s/p08
+PWD c:/Users/Freddy/Documents/VS_CODE_Projects/Projektmanagement
 INPUT c:/texlive/2020/texmf.cnf
 INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Sebastian/Dropbox (Privat)/Uni/PM/proj/20s/p08/20s-p08.tex
+INPUT c:/Users/Freddy/Documents/VS_CODE_Projects/Projektmanagement/20s-p08.tex
 OUTPUT out/20s-p08.log
 INPUT hda/hdaConceptClass.cls
 INPUT hda/hdaConceptClass.cls
@@ -302,8 +302,7 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/wasy/wasy7.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/wasy/wasy5.tfm
 OUTPUT out/20s-p08.toc
-INPUT wb/22/status.tex
-INPUT wb/22/status.tex
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ibm/plex/IBMPlexSans-tlf-t1.tfm
 INPUT hda/pp/hda/img/hda-fbe-logo.png
 INPUT ./hda/pp/hda/img/hda-fbe-logo.png
 INPUT ./hda/pp/hda/img/hda-fbe-logo.png
@@ -323,6 +322,10 @@ INPUT c:/texlive/2020/texmf-dist/fonts/vf/ibm/plex/IBMPlexSans-Bold-tlf-t1.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ibm/plex/IBMPlexSans-Bold-tlf-t1--base.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/ibm/plex/IBMPlexSans-tlf-ts1.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ibm/plex/IBMPlexSans-tlf-ts1--base.tfm
+INPUT wb/22/status.tex
+INPUT wb/22/status.tex
+INPUT wb/23/status.tex
+INPUT wb/23/status.tex
 INPUT hda/pp/hda/img/hda-fbe-logo.png
 INPUT ./hda/pp/hda/img/hda-fbe-logo.png
 INPUT wb/22/done.tex
@@ -334,6 +337,14 @@ INPUT hda/pp/hda/img/hda-fbe-logo.png
 INPUT ./hda/pp/hda/img/hda-fbe-logo.png
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/ibm/plex/IBMPlexSans-tlf-t1.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ibm/plex/IBMPlexSans-tlf-t1--base.tfm
+INPUT hda/pp/hda/img/hda-fbe-logo.png
+INPUT ./hda/pp/hda/img/hda-fbe-logo.png
+INPUT wb/23/done.tex
+INPUT wb/23/done.tex
+INPUT wb/23/todo.tex
+INPUT wb/23/todo.tex
+INPUT hda/pp/hda/img/hda-fbe-logo.png
+INPUT ./hda/pp/hda/img/hda-fbe-logo.png
 INPUT wb/project.tex
 INPUT wb/project.tex
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ibm/plex/IBMPlexSans-tlf-t1.tfm
