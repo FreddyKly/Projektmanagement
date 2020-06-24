@@ -1,0 +1,33 @@
+\subsection{Invertierender Transistor
+}\label{subsec:topo-inv-transistor}
+
+Diese Schaltung stellt eine Emitterschaltung dar. Sie nutzt einen NPN Transistor als Schalter um die Spannungswandlung vorzunehmen.
+Ein Vorteil ist das sie die Spannung sowohl nieder als auch hoch setzten kann. Ein Nachteil ist, dass sie den Logik Pegel invertiert. 
+\begin{figure}
+  \begin{circuitikz}
+    \draw (0,0) node[npn](Q1) {2N2222}
+    (Q1.base) node[anchor=east] {}
+    (Q1.collector) node[anchor=south] {}
+    (Q1.emitter) node[anchor=north] {};
+    \draw (Q1.collector) to[R, l2=$R_1$ and \SI {10}{k\ohm}] ++(0,2)
+    node[vcc](){\SI{3.3}{V}};
+    \draw (Q1.collector) to[short, -o] ++(2,0) node[right]{$output$};
+    \draw (Q1.emitter) node[ground] {} ++(0,-1);
+    \draw (Q1.base) to[R, -o, l2=$R_2$ and \SI {10}{k\ohm}] ++(-2,0)
+    node[left]{$input$};
+  \end{circuitikz}
+  \caption{inv. Transistor}
+  \label{fig:spannungsteiler}
+\end{figure}
+
+Der Einganswiderstand berechnet sich den Basiswiederstand und $R_{be}$:
+
+\begin{math}
+  R_i = R_2 + R_{be}
+\end{math}
+
+Der Ausgangswiderstand ist:
+
+\begin{math}
+  R_o = R_1 || R_{ce} = \frac{R_1 * R_{ce}}{R_1+R_{ce}}
+\end{math}

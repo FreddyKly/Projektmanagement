@@ -1,0 +1,38 @@
+\subsection{Spannungsteiler
+}\label{subsec:topo-spannungsteiler}
+
+Die erste betrachtete Topologie stellt ein einfacher resistiver Spannungsteiler. 
+Hier wird die Eingangsspannung durch 2 Widerstände so geteilt, dass das gewünschte Spannungsverhältnis am Ausgang anliegt.
+Ein Problem dieser Schaltung ist, dass sie nur eine große in eine kleine Spannung wandeln kann.
+\begin{figure}
+  \begin{circuitikz}
+    \draw (0,0)
+      to[R=$R2$] (0,2)
+      to[R=$R1$,-o] (0,4) node[right]{$input$};
+    \draw (0,0) node[ground] {} (0,-1);
+    \draw (0,2) to[short, -o] (1,2) node[right]{$output$};
+  \end{circuitikz}
+  \caption{Spannungsteiler}
+  \label{fig:spannungsteiler}
+\end{figure}
+
+Die Ausgangsspannung wird dabei wie folgt bestimmt:
+
+\begin{math}
+  U_{output}(t) = U_{input}(t) * \frac{R_2}{R_1+R_2}
+\end{math}
+
+Der Einganswiderstand berechnet sich aus der Reihenschaltung der beiden Widerstände:
+
+\begin{math}
+  R_i = R_1+R_2
+\end{math}
+
+Der Ausgangswiderstand ist:
+
+\begin{math}
+  R_o = R_1 || R_2 = \frac{R_1 * R_2}{R_1+R_2}
+\end{math}
+
+
+% EOF

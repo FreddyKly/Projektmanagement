@@ -1,0 +1,42 @@
+\subsection{MosFet Pegelwandler
+}\label{subsec:topo-spannungsteiler}
+
+Dieser Pegelwandler besitzt ein N Kanal Mosfet als Grundlegendes Bauelement.
+Der große Vorteil dieser Schaltung liegt darin, dass sie bidirektional funktioniert.
+
+
+\begin{figure}
+  \begin{circuitikz}
+    \draw (0,0) node[nigfete](Q1) {2N7002}
+    (Q1.gate) node[anchor=east] {}
+    (Q1.drain) node[anchor=south] {}
+    (Q1.source) node[anchor=north] {};
+    \draw (Q1.gate) to[short] ++(0,3)
+    to[short] ++(1,0);
+    \draw (Q1.drain) to[R, l2_=$R_1$ and \SI {10}{k\ohm}] ++(0,2)
+    node[vcc](){\SI{3.3}{V}};
+    \draw (Q1.source) to[R, l2_=$R_2$ and \SI {10}{k\ohm}] ++(0,-2)
+    node[vee](){\SI{5}{V}};
+    \draw (Q1.collector) to[short, -o] ++(2,0) node[right]{$IO_1$};
+    \draw (Q1.source) to[short, -o] ++(2,0) node[right]{$IO_2$};
+  \end{circuitikz}
+  \caption{MosFet Bidirektional}
+  \label{fig:mosfet}
+\end{figure}
+
+
+Der Einganswiderstand berechnet wie folgt:
+
+Eingang(Logisch 0)
+\begin{math}
+  R_i = R_1 || R_{DS} + R_2
+\end{math}
+
+Im Falle einer logischen 1 nahezu $\inf$
+
+
+Der Ausgangswiderstand ist:
+
+\begin{math}
+  R_o = R_1
+\end{math}
