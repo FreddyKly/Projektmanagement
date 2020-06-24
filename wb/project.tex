@@ -14,68 +14,19 @@ In diesem Projekt werden verschiedene Arten von Pegelwandlern beleuchtet und im 
 Die Pegelwandler sollen mittels Schaltungssimulation auf verschiedene Parameter untersucht werden.
 Diese beinhalten u.A. 
 \begin{itemize}
+  \item Eingangswiderstand
+  \item Ausgangswiderstand
   \item Frequenzverhalten
-  \item Direktionalem Verhalten
   \item Komplexität
+  \item Direktionalem Verhalten
   \item Preis
 \end{itemize}
 
-Die drei zu vergleichenden Pegelwandlertopologien sind:
+Ein und Ausgangswiderstand wird rein theoretisch auf dem mathematischen Grundlagen der Schaltungen beschrieben.
 
-\begin{figure}
-  \begin{circuitikz}
-    \draw (0,0)
-      to[R=$R2$] (0,2)
-      to[R=$R1$,-o] (0,4) node[right]{$input$};
-    \draw (0,0) node[ground] {} (0,-1);
-    \draw (0,2) to[short, -o] (1,2) node[right]{$output$};
-  \end{circuitikz}
-  \caption{Spannungsteiler}
-  \label{fig:spannungsteiler}
-\end{figure}
+Frequenzverhalten wird mittels LTSpice simuliert.
 
-
-\begin{figure}
-  \begin{circuitikz}
-    \draw (0,0) node[npn](Q1) {2N2222}
-    (Q1.base) node[anchor=east] {}
-    (Q1.collector) node[anchor=south] {}
-    (Q1.emitter) node[anchor=north] {};
-    \draw (Q1.collector) to[R, l2=$R_1$ and \SI {10}{k\ohm}] ++(0,2)
-    node[vcc](){\SI{3.3}{V}};
-    \draw (Q1.collector) to[short, -o] ++(2,0) node[right]{$output$};
-    \draw (Q1.emitter) node[ground] {} ++(0,-1);
-    \draw (Q1.base) to[R, -o, l2=$R_2$ and \SI {10}{k\ohm}] ++(-2,0)
-    node[left]{$input$};
-  \end{circuitikz}
-  \caption{inv. Transistor}
-  \label{fig:spannungsteiler}
-\end{figure}
-
-
-
-\begin{figure}
-  \begin{circuitikz}
-    \draw (0,0) node[nigfete](Q1) {2N7002}
-    (Q1.gate) node[anchor=east] {}
-    (Q1.drain) node[anchor=south] {}
-    (Q1.source) node[anchor=north] {};
-    \draw (Q1.gate) to[short] ++(0,3)
-    to[short] ++(1,0);
-    \draw (Q1.drain) to[R, l2_=$R_1$ and \SI {10}{k\ohm}] ++(0,2)
-    node[vcc](){\SI{3.3}{V}};
-    \draw (Q1.source) to[R, l2_=$R_2$ and \SI {10}{k\ohm}] ++(0,-2)
-    node[vee](){\SI{5}{V}};
-    \draw (Q1.collector) to[short, -o] ++(2,0) node[right]{$IO_1$};
-    \draw (Q1.source) to[short, -o] ++(2,0) node[right]{$IO_2$};
-  \end{circuitikz}
-  \caption{MosFet Bidirektional}
-  \label{fig:mosfet}
-\end{figure}
-
-
-
-
+Komplexität und Preis stellen subjektive aussagen dar. Um eine vergleichbarkeit zu gewährleisten wurden jeweils die günstigsten passenden Bauelemente bei einem großen Distributor gewählt.
 
 
 
@@ -83,5 +34,20 @@ Die drei zu vergleichenden Pegelwandlertopologien sind:
 }\label{subsec:proj-target}
 
 Am Ende soll eine fundierte Aussage zu dem verschiedenen Pegelwandlerarchitekturen zu geben.
+
+\newpage
+\section{Betrachtete Pegelwandler Topologien}\label{sec:pegel-topo}
+
+\newpage
+\input{wb/spannungsteiler.tex}
+\newpage
+\input{wb/inv_transistor.tex}
+\newpage
+\input{wb/bi_fet.tex}
+
+
+
+
+
 
 % EOF
