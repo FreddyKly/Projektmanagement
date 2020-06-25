@@ -3,7 +3,7 @@
 
 Dieser Pegelwandler besitzt ein N Kanal Mosfet als Grundlegendes Bauelement.
 Der große Vorteil dieser Schaltung liegt darin, dass sie bidirektional funktioniert.
-
+Es wird der Weg von $IO_2$ zu $IO_1$ betrachtet.
 
 \begin{figure}
   \begin{circuitikz}
@@ -25,18 +25,18 @@ Der große Vorteil dieser Schaltung liegt darin, dass sie bidirektional funktion
 \end{figure}
 
 
-Der Einganswiderstand berechnet wie folgt:
+Der Einganswiderstand an $IO_2$ berechnet wie folgt:
 
-Eingang(Logisch 0)
+Logisch 0:
 \begin{math}
   R_i = R_1 || R_{DS} + R_2
 \end{math}
 
-Im Falle einer logischen 1 nahezu $\inf$
+Im Falle einer logischen 1 nahezu $\infty$
 
-
-Der Ausgangswiderstand ist:
+Der Ausgangswiderstand an $IO_1$ ist:
 
 \begin{math}
   R_o = R_1
 \end{math}
+
